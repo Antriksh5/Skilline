@@ -8,23 +8,44 @@ a{
 
 .site-header{
     background-color: #FFF2E1;
-    padding: 2rem 5%;
+    /* padding: 2rem 5%; */
+    padding: 0 2%;
 }
 .navbar{
     display: flex;  
     justify-content: space-between;
     align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
 }
+.navbar-logo {
+    position: relative;
+    display: inline-block;
+}
+
 .navbar-logo a{
     position: relative;
     display: inline-block;
 }
 .navbar-logo img{
     display: block;
-    height: 83px;
+    height: 60px;
     width: auto;
 }
-.navbar-logo span{
+.navbar-logo span {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translateY(-50%);
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-size: 32px;
+    letter-spacing: 0.04em;
+    line-height: 100%;
+    color: #113C49;
+    white-space: nowrap;
+}
+/* .navbar-logo span{
     font-family: var(--primary-font);
     font-weight: 700;
     font-size: 32px;
@@ -35,14 +56,14 @@ a{
     top: 50%;
     left: 100%;
     transform: translate(-50%, -50%);
-}
+} */
 
-.nav-links{
+.navbar-links{
     display: flex;
-    gap: 50px;
+    gap: 30px;
     list-style-type: none;
 }
-.nav-links a{
+.navbar-links a{
     font-family: var(--primary-font);
     font-size: 22px;
     color:#252641;
@@ -53,10 +74,10 @@ a{
 .navbar-right{
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 50px;
 }
 .login-btn, .signup-btn{
-    border-radius: 80px;
+    border-radius: 25px;
     font-weight: 400;
     font-family: var(--primary-font);
     font-size: 22px;

@@ -7,7 +7,7 @@ function Header() {
       <nav className='navbar'>
 
         <div className="navbar-logo">
-            <a href="">
+            <a href="/">
                 <img src={polyLogo} alt="" />
                 <span>
                     Skilline
@@ -16,11 +16,12 @@ function Header() {
         </div>
         <div className="navbar-right">
         
-            <ul className='nav-links'>
-                <li><a href="">Home</a></li>
-                <li><a href="">Career</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">About Us</a></li>
+            <ul className='navbar-links'>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Career</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About Us</a></li>
+                
             </ul>
         
 
