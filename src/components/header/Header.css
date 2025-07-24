@@ -1,0 +1,77 @@
+:root {
+  --background-color: #ffffff;
+  --primary-font: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+.site-header{
+    background-color: #FFF2E1;
+    padding: 2rem 5%;
+}
+.navbar{
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-logo a{
+    position: relative;
+    display: inline-block;
+}
+.navbar-logo img{
+    display: block;
+    height: 83px;
+    width: auto;
+}
+.navbar-logo span{
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-size: 32px;
+    letter-spacing: 0.04em;
+    line-height: 100%;
+    color: #113C49;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.nav-links{
+    display: flex;
+    gap: 50px;
+    list-style-type: none;
+}
+.nav-links a{
+    font-family: var(--primary-font);
+    font-size: 22px;
+    color:#252641;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    line-height: 100%;
+}
+.navbar-right{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.login-btn, .signup-btn{
+    border-radius: 80px;
+    font-weight: 400;
+    font-family: var(--primary-font);
+    font-size: 22px;
+    padding: 13px 35px;
+    border: none;
+}
+.login-btn{
+    background-color: #FFFFFF;
+    color: #6C6C6C;
+}
+.signup-btn{
+    background-color: #F48C06;
+    color: #FFFFFF;
+}
+.navbar-actions{
+    display: flex;
+    gap: 34px;
+}
