@@ -1,0 +1,37 @@
+
+/* :root {
+    --background-color: #ffffff;
+    --primary-font: 'Poppins', sans-serif;
+    --secondary-font: 'Nunito Sans', 'Poppins';
+} */
+
+.company-section {
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 100px 130px;
+}
+.company-heading {
+    font-family: var(--primary-font);
+    color: #696984;
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    line-height: 160%;
+    letter-spacing: 0.02em;
+}
+.company-logos{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1340px;
+}
+.company-logo {
+    color: #CFCFDE;
+    object-fit: contain;
+    max-width: 120px;
+    max-height: 60px;
+}
