@@ -1,0 +1,83 @@
+.wis-feature-cards {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+.wis-feature {
+    width: 400px; 
+    height: 280px; 
+    border-radius: 20px;
+    color: white; 
+    font-family: var(--primary-font);
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.wis-feature-title h3 {
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 0 1rem 0;
+}
+
+.feature-btn {
+    font-family: var(--primary-font);   
+    color: white;
+    background-color: transparent;
+    padding: 0.8rem 1.5rem;
+    border: 2px solid white; 
+    border-radius: 80px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.access-code-input {
+    font-family: var(--primary-font);
+    background-color: #23BDEE; 
+    color: white;
+    border: none;
+    border-radius: 80px;
+    padding: 0.8rem 1.5rem;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.access-code-input::placeholder {
+    color: white;
+    opacity: 0.9;
+}
+
+.heading {
+    font-family: var(--primary-font);
+    font-size: clamp(28px, 4vw, 44px);
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.5;
+    color: #2F327D;
+}
+
+.heading span {
+    color: #F48C06;
+}
+
+.description {
+    color: #696984;
+    text-align: center;
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: clamp(14px, 2vw, 24px);
+    max-width: 1065px;
+    margin: 1rem auto 0;
+}

@@ -49,9 +49,10 @@
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    cursor: pointer;
 }
 .card:hover{
-    transform: translateY(-5px);
+    transform: translateY(-10px);
 }
 .card-icon img{
     width: 150px;

@@ -3,6 +3,7 @@ import React from 'react';
 import './App.css';
 import CompanySection from './components/CompanySection/company.jsx';
 import AllInOne from './components/AllInOne/AllInOne.jsx';
+import WhatIsSkilline from './components/WhatIsSkilline/Wis.jsx';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <CompanySection />
       <AllInOne />
+      <WhatIsSkilline />
     </>
   );
 }
