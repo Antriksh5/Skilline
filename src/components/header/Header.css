@@ -78,7 +78,10 @@ a {
     border: none;
     cursor: pointer;
 }
-
+.login-btn:hover, .signup-btn:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
 .login-btn {
     background-color: #FFFFFF;
     color: #6C6C6C;
@@ -145,7 +148,10 @@ a {
     align-items: center;
 }
 
-
+.get-started:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
 .watch-how {
     display: flex;
     align-items: center;
@@ -167,6 +173,7 @@ a {
     height: 80px;
     margin-top: 15px;
 }
+
 .hero-image {
     flex: 1 1 400px;
     display: flex;
@@ -295,6 +302,10 @@ a {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+}
+.tag-join-btn:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
 }
 .tag-status{
     position: relative;
