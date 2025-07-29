@@ -19,8 +19,8 @@ function Classroom(){
                     <div className="playBtn">
                         <img src={playIcon} alt="Play" />
                     </div>
-                    <div className="left-corner"></div>
-                    <div className="right-corner"></div>
+                    <div className="corner-shape left-corner"></div>
+                    <div className=" corner-shape right-corner"></div>
                 </div>
             </div>
         </section>

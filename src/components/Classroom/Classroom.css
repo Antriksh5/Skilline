@@ -1,22 +1,51 @@
 .classroom{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 4rem 2rem;
+    padding: 160px 120px;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 4rem;
+    max-width: 1400px;
 }
 
 .left {
     flex: 1;
-    max-width: 500px;
+    max-width: 730px;
     font-family: var(--primary-font);
+    padding: 0 60px 0 0;
+    position: relative;
 }
 .left-head{
     color: #2F327D;
     font-weight: 500;
     font-size: 36px;
     line-height: 160%;
+    width: 655px;
+    position: relative;
+}
+.left-head::before {
+    content: ''; 
+    position: absolute;
+    background-color: #F48C06;
+    opacity: 0.6;
+    width: 80px; 
+    height: 80px;
+    border-radius: 50%;
+    top: -15px;
+    left: -25px;
+    z-index: -1;
+}
+.left::after {
+    content: ''; 
+    position: absolute;
+    background-color: #F48C06;
+    opacity: 0.6;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 60%;
+    right: 0;
+    z-index: -1; 
 }
 .left-head span{
     color: #F48C06;
@@ -24,9 +53,10 @@
 .des{
     color: #696984;
     font-weight: 400;
-    font-size: 24px;
+    font-size: clamp(18px,2vw,24px);
     line-height: 180%;
     letter-spacing: 0.02em;    
+    text-align: left;
 }
 .learn-more {
     font-size: 22px;
@@ -37,17 +67,54 @@
 }
 .right{
     flex: 1;
-    position: relative;
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
 }
 .img-container {
     position: relative;
     display: inline-block;
     border-radius: 1rem;
-    overflow: hidden;
+    /* overflow: hidden; */
+    max-width: 550px;
 }
 
 .img-container img {
     width: 100%;
     display: block;
     
+}
+.playBtn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);  */
+    font-size: 2rem;
+    padding: 0.5rem 0.8rem;
+    color: #3b82f6;
+    cursor: pointer;
+}
+.playBtn img{
+    width: 100px;
+}
+.corner-shape{
+    border-radius: 20px;
+    position: absolute;
+    z-index: -1;
+}
+.left-corner {
+    width: 138px;
+    height: 138px;
+    background: #23BDEE;
+    top: -22px;
+    left: -22px;
+}
+.right-corner {
+    width: 231px;
+    height: 231px;
+    background: #F3AC50;
+    bottom: -23px;
+    right: -23px;
 }
