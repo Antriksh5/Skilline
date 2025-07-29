@@ -27,9 +27,9 @@ function AllInOne() {
     ]
     return (
         <section className="all-in-one-section">
-            <h2 className="all-in-one-title">All-In-One <span>Cloud Software.</span></h2>
-            <p className="all-in-one-description">Skilline is one powerful online software suite that combines all the tools needed to run a successful school or office.
-</p>
+            <strong className="all-in-one-title">All-In-One <span>Cloud Software.</span></strong>
+            <div className="all-in-one-description"><p>Skilline is one powerful online software suite that combines all the tools needed to run a successful school or office.
+</p></div>
         <div className="card-grid">
         {
             cards.map((card, index) => (

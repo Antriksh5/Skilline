@@ -4,14 +4,16 @@
     text-align: center;
     margin: 0 auto;
     padding: 25px 200px;
+    justify-content: center;
 }
 
 .all-in-one-title{
     color: #2F327D;
     font-family: var(--primary-font);
-    font-size: clamp(28px, 4vw, 48px);
-    font-weight: 700;
+    font-size: clamp(28px, 4vw, 44px);
+    font-weight: 600;
     margin-bottom: 16px;
+    line-height: 180%;
 }
 .all-in-one-title span{
     color: #F48C06;
@@ -19,11 +21,13 @@
 }
 
 .all-in-one-description {
+    justify-content: center;
     font-family: var(--primary-font);
     color: #696984;
-    margin: 0 auto 50px auto;
-    max-width: 600px;
-    font-size: clamp(14px, 2vw, 20px);
+    margin: 1rem auto;
+    max-width: 837px;
+    font-size: clamp(14px, 2vw, 24px);
+    line-height: 180%;
 }
 .card-grid{
     display: grid;
@@ -37,7 +41,7 @@
 .card{
     position: relative;
     background-color: white;
-    padding: 6px 10px 30px;
+    padding: 6px 10px 6px;
     border-radius: 16px;
     text-align: center;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
@@ -80,7 +84,7 @@
     color: #2F327D;
     line-height: 1.4;
     margin-bottom: 16px;
-    padding: 0 35px;
+    padding: 85px 15px 4px;
 }
 .card p {
     font-family: var(--primary-font);
