@@ -108,7 +108,7 @@ a {
 
 .hero-text h1 {
     font-family: var(--primary-font);
-    font-size: 54px;
+    font-size: clamp(28px, 6vw, 54px);
     font-weight: 700;
     color: #2F327D;
     margin-bottom: 20px;
@@ -116,7 +116,7 @@ a {
 
 .hero-text p {
     font-family: var(--secondary-font);
-    font-size: 24px;
+    font-size: clamp(14px, 3vw, 24px);
     font-weight: 400;
     color: #464646;
     margin-bottom: 30px;
@@ -302,59 +302,3 @@ a {
     left: 194px;   
     height: 15px;
 }
-/* --- Responsive --- */
-
-@media (max-width: 900px) {
-  .navbar-right {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .navbar-links {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .hero-section {
-    flex-direction: column-reverse;
-    text-align: center;
-  }
-
-  .hero-buttons {
-    justify-content: center;
-  }
-
-  .navbar {
-    flex-direction: column;
-    gap: 20px;
-  }
-}
-
-@media (max-width: 768px) {
-  .tag-box {
-    padding: 8px 12px;
-    max-width: 100px;
-    font-size: 12px;
-    gap: 6px;
-    transform: translate(-50%, -50%);
-  }
-
-  .tag-box strong {
-    font-size: 14px;
-  }
-
-  .tag-box span {
-    font-size: 10px;
-  }
-
-  .tag-icon {
-    width: 18px;
-    height: 18px;
-  }
-    /* 
-  Optional: hide 1–2 boxes on smaller screens 
-  .tag-box:nth-child(2),
-  .tag-box:nth-child(4) {
-    display: none;
-  } */
-    }
