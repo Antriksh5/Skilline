@@ -1,0 +1,96 @@
+.integration-section {
+    padding: 80px 5%;
+}
+.int-container {
+    display: flex;
+    align-items: center;
+    gap: 90px;
+    max-width: 1100 px;
+    margin: 0 auto;
+}
+.integration-icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 90px;
+}
+.inte-text {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--secondary-font);
+    text-align: left;
+    padding-left: 50px;
+    position: relative;
+}
+
+.integration-icons, .inte-text {
+    flex: 1;
+    width: 50%;
+}
+.integration-icons img {
+    justify-self: center;
+}
+.oneDriveLogo {
+    max-width: 228px;
+}
+.driveLogo {
+    max-width: 138px;
+}
+.boxLogo {
+    max-width: 130px;
+}
+.teamsLogo {
+    max-width: 159px;
+}
+.int-head {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0.2em;
+    color: #525596;
+
+    position: relative;
+    padding-left: 100px;
+}
+.int-head::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 80px;
+    height: 1px;
+    background-color: #525596;
+}
+.int-main {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 0%;
+    line-height: 160%;
+    color: #2F327D;
+}
+.int-main span {
+    color: #F48C06;
+}
+.int-des {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 180%;
+    letter-spacing: 0%;
+    color: #696984;
+}
+.int-btn {
+    border: 1px solid #F48C06;
+    border-radius: 80px;
+    color: #F48C06;
+    background-color: white;
+    font-family: var(--secondary-font);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 180%;
+    letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 19px 38px 18px;
+}
