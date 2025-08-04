@@ -1,0 +1,151 @@
+/* In Footer.css */
+.site-footer {
+    background-color: #252641;
+    color: #B2B3CF; /* Set a default light text color for the section */
+    padding: 60px 5%;
+    font-family: var(--primary-font);
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center; /* Center-align text by default */
+}
+
+/* --- Top Section --- */
+.footer-top {
+    margin-bottom: 30px;
+    /* This wrapper helps us center the brand block */
+    display: flex;
+    justify-content: center;
+}
+
+/* FIX: Group the logo and tagline together for alignment */
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative; /* Needed for the pseudo-element */
+    padding-left: 30px; /* Make space for the vertical line */
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-logo img {
+    height: 40px;
+}
+
+.footer-logo span {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
+
+/* FIX: Create the vertical line separator with a pseudo-element */
+.footer-brand::before {
+    content: '';
+    position: absolute;
+    left: 111px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 40px;
+    width: 1px;
+    background-color: #4B4C63;
+}
+
+.footer-tagline {
+    font-weight: 500;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+/* --- Divider --- */
+.footer-divider {
+    border: none;
+    height: 1px;
+    background-color: #4B4C63;
+    margin: 40px 0;
+}
+
+/* --- Subscribe Section --- */
+.footer-subscribe {
+    padding: 20px 0;
+}
+
+.footer-subscribe h3 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    letter-spacing: 0.04em;
+}
+
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* FIX: More accurate styling for the input */
+.subscribe-form input {
+    background-color: #252641; /* Darker background */
+    border: 1px solid#83839A;
+    border-radius: 80px;
+    padding: 15px 30px;
+    color: white;
+    font-size: 16px;
+    width: 350px;
+}
+
+.subscribe-form input::placeholder {
+    color: #B2B3CF;
+}
+
+/* FIX: More accurate color for the button */
+.subscribe-form button {
+    background-color: #545AE7; /* Brighter purple button */
+    color: white;
+    border: none;
+    border-radius: 80px;
+    padding: 15px 40px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* --- Bottom Section --- */
+/* FIX: Stack and center the bottom content */
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 15px; /* Adjust gap between items */
+}
+
+.footer-links a {
+    color: #B2B3CF;
+    text-decoration: none;
+}
+
+/* FIX: Add vertical pipe separators between links */
+.footer-links li:not(:last-child)::after {
+    content: '|';
+    margin-left: 15px;
+    color: #B2B3CF;
+}
+
+.footer-copyright {
+    color: #838499;
+    font-size: 14px;
+}

@@ -9,11 +9,13 @@ import Features from './components/OurFeatures/Features.jsx';
 import Integration from './components/Integrations/Integration.jsx';
 import Testimonial from './components/Testimonials/Testimonial.jsx';
 import News from './components/News/News.jsx';
+import Footer from './components/Footer/Footer.jsx';
 function App() {
   return (
     <>
       
       <Header />
+      <main className="main-content">
       <CompanySection />
       <AllInOne />
       <WhatIsSkilline />
@@ -22,6 +24,8 @@ function App() {
       <Integration />
       <Testimonial />
       <News />
+      </main>
+      <Footer />
     </>
   );
 }

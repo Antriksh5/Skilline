@@ -18,7 +18,6 @@ function News() {
                     <div className="news-card">
                         <div className="news-img-container">
                         <img src={largeImg} alt="" />
-                        <span className="news-tag">NEWS</span>
                         </div>
                     </div>
                     <div className="news-card-txt">
@@ -32,7 +31,6 @@ function News() {
                 <div className="news-small-card">
                     <div className="news-img">
                         <img src={smallImg1} alt="" />
-                        <span className="press-release">PRESS RELEASE</span>
                     </div>
                     <div className="news-small-txt">
                         <h4>Class Technologies Inc. Closes $30 Million Series A Financing to Meet High Demand</h4>
@@ -43,7 +41,6 @@ function News() {
                 <div className="news-small-card">
                     <div className="news-img">
                         <img src={smallImg2} alt="" />
-                        <span className="news-tag">NEWS</span>
                     </div>
                     <div className="news-small-txt">
                         <h4>Zoom's earliest investors are betting millions on a better Zoom for schools</h4>
@@ -54,7 +51,6 @@ function News() {
                 <div className="news-small-card">
                     <div className="news-img">
                         <img src={smallImg3} alt="" />
-                        <span className="news-tag">NEWS</span>
                     </div>
                     <div className="news-small-txt">
                         <h4>Former Blackboard CEO Raises $16M to Bring LMS Features to Zoom Classrooms</h4>
