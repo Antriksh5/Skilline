@@ -7,6 +7,7 @@ import WhatIsSkilline from './components/WhatIsSkilline/Wis.jsx';
 import Classroom from './components/Classroom/Classroom.jsx';
 import Features from './components/OurFeatures/Features.jsx';
 import Integration from './components/Integrations/Integration.jsx';
+import Testimonial from './components/Testimonials/Testimonial.jsx';
 function App() {
   return (
     <>
@@ -18,6 +19,7 @@ function App() {
       <Classroom />
       <Features />
       <Integration />
+      <Testimonial />
     </>
   );
 }

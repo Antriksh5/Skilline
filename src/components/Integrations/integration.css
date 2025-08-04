@@ -4,7 +4,7 @@
 .int-container {
     display: flex;
     align-items: center;
-    gap: 90px;
+    gap: 60px;
     max-width: 1100 px;
     margin: 0 auto;
 }
@@ -48,9 +48,9 @@
     line-height: 100%;
     letter-spacing: 0.2em;
     color: #525596;
-
     position: relative;
     padding-left: 100px;
+    margin-bottom: 1rem;
 }
 .int-head::before {
     content: '';
@@ -68,12 +68,14 @@
     letter-spacing: 0%;
     line-height: 160%;
     color: #2F327D;
+    margin-bottom: 1.5rem;
+
 }
 .int-main span {
     color: #F48C06;
 }
 .int-des {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 180%;
     letter-spacing: 0%;
@@ -93,4 +95,8 @@
     align-items: center;
     justify-content: center;
     padding: 19px 38px 18px;
+}
+.int-btn:hover {
+  background-color: #F48C06;
+  color: white;
 }
