@@ -10,12 +10,16 @@ import discussionImage from "../../assets/Discussions.svg"
 import icon1 from "../../assets/icon-1.png"
 import icon2 from "../../assets/icon-2.png"
 import icon3 from "../../assets/icon-3.png"
+import feat1 from "../../assets/feat1.svg"
+import feat2 from "../../assets/feat2.svg"
 
+import useIntersectionObserver from "../../hook/useIntersectionObserver";
 function Features () {
 
     
+      const [ref, isVisible] = useIntersectionObserver({ threshold: 0.1 });
     return(
-        <section className="features-section">
+        <section ref={ref} className={`features-section ${isVisible ? 'is-visible' : ''} animate-on-scroll`}>
             <div className="feat-txt">
                 <h2>
                     Our<span> Features</span>
@@ -52,6 +56,8 @@ function Features () {
                 
                 image={girlImage}
                 imageback={grid}
+                imageback1={feat1}
+                imageback2={feat2}
                 isReversed={true}
                
 

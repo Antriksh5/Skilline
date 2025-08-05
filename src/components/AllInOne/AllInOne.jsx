@@ -5,9 +5,10 @@ import "./AllInOne.css";
 import billingIcon from "../../assets/billing.svg";
 import customerIcon from "../../assets/customer.svg";
 import schedulingIcon from "../../assets/scheduling.svg";
+import useIntersectionObserver from "../../hook/useIntersectionObserver";
 
 function AllInOne() {
-
+    const [ref, isVisible] = useIntersectionObserver({ threshold: 0.1 });
     const cards = [
         {
             icon: billingIcon,
@@ -26,7 +27,7 @@ function AllInOne() {
         }
     ]
     return (
-        <section className="all-in-one-section">
+        <section ref={ref} className={`all-in-one-section ${isVisible ? 'is-visible' : ''} animate-on-scroll`}>
             <strong className="all-in-one-title">All-In-One <span>Cloud Software.</span></strong>
             <div className="all-in-one-description"><p>Skilline is one powerful online software suite that combines all the tools needed to run a successful school or office.
 </p></div>

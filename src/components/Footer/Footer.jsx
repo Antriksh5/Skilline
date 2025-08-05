@@ -2,10 +2,11 @@
 import React from 'react';
 import './Footer.css';
 import skilline from '../../assets/skilline.svg';
-
+import useIntersectionObserver from "../../hook/useIntersectionObserver";
 function Footer() {
+  const [ref, isVisible] = useIntersectionObserver({ threshold: 0.1 });
   return (
-    <footer className="site-footer">
+    <footer ref={ref} className={`site-footer ${isVisible ? 'is-visible' : ''} animate-on-scroll`}>
       <div className="footer-container">
         <div className="footer-top">
             <div className="footer-brand">

@@ -4,9 +4,13 @@ import "./Wis.css";
 
 import instructorBg from "../../assets/instructors.svg"; 
 import studentsBg from "../../assets/students.svg"; 
+import useIntersectionObserver from "../../hook/useIntersectionObserver";
+
 function Wis() {
+    const [ref, isVisible] = useIntersectionObserver({ threshold: 0.1 });
+
   return (
-    <section>
+    <section ref={ref} className={`wis-section ${isVisible ? 'is-visible' : ''} animate-on-scroll`}>
       <div className="heading">
         <h3>What is <span>Skilline?</span></h3>
       </div>

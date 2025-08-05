@@ -5,9 +5,12 @@ import smallImg2 from "../../assets/small2.svg";
 import smallImg3 from "../../assets/small3.svg";
 import largeImg from "../../assets/large.svg";
 
+import useIntersectionObserver from "../../hook/useIntersectionObserver";
 function News() {
+    
+      const [ref, isVisible] = useIntersectionObserver({ threshold: 0.1 });
     return(
-        <section className="news-section"> 
+        <section ref={ref} className={`news-section ${isVisible ? 'is-visible' : ''} animate-on-scroll`}> 
             <div className="news-head">
                 <h2>Lastest News and Resources</h2>
                 <p>See the developments that have occurred to Skillines in the world</p>

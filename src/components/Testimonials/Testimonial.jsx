@@ -2,11 +2,14 @@ import React from "react";
 import "./Testimonial.css";
 import girlImg from "../../assets/girl2.svg"
 import stars from "../../assets/stars.png"
+import useIntersectionObserver from "../../hook/useIntersectionObserver";
 
 
 function Testimonial() {
+          const [ref, isVisible] = useIntersectionObserver({ threshold: 0.1 });
+
     return (
-        <section className="test-section">
+        <section ref={ref} className={`test-section ${isVisible ? 'is-visible' : ''} animate-on-scroll`}>
             <div className="test-container">
             <div className="test-txt">
 

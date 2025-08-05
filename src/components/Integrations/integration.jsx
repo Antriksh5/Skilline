@@ -6,9 +6,11 @@ import boxImg from "../../assets/box.svg"
 import driveImg from "../../assets/drive.svg"
 import teamsImg from "../../assets/teams.svg"
 
+import useIntersectionObserver from "../../hook/useIntersectionObserver";
 function Integration() {
+      const [ref, isVisible] = useIntersectionObserver({ threshold: 0.1 });
     return(
-        <section className="integration-section">
+        <section  ref={ref} className={`integration-section ${isVisible ? 'is-visible' : ''} animate-on-scroll`}>
             <div className="int-container">
             <div className="integration-icons">
                 <img className="oneDriveLogo" src={onedriveImg} alt="" />
