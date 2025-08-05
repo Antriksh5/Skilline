@@ -313,3 +313,49 @@ a {
     left: 194px;   
     height: 15px;
 }
+
+
+
+.hamburger-menu {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #2F327D; 
+}
+
+@media (max-width: 992px) { 
+  .navbar-right {
+    display: none;
+    position: absolute;
+    top: 90px; 
+    left: 0;
+    width: 100%;
+    background-color: #FFF2E1; 
+    flex-direction: column;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  /* When the menu is open, show it */
+  .navbar-right.open {
+    display: flex;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-actions {
+    margin-top: 15px;
+    flex-direction: column;
+  }
+
+  /* Show the hamburger button */
+  .hamburger-menu {
+    display: block;
+  }
+}

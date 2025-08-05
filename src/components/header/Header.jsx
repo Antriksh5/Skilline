@@ -4,7 +4,6 @@ import Navbar from './Navbar.jsx';
 import Hero from './Hero.jsx';
 import HeroImage from './HeroImage.jsx';
 import useIntersectionObserver from "../../hook/useIntersectionObserver";
-
 function Header() {
     const [ref, isVisible] = useIntersectionObserver({ threshold: 0.1 });
   return (

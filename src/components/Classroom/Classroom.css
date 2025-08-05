@@ -118,3 +118,13 @@
     bottom: -23px;
     right: -23px;
 }
+@media (max-width: 992px) {
+  .classroom {
+    flex-direction: column;
+    padding: 80px 5%; 
+  }
+
+  .left-head {
+    width: auto; 
+  }
+}

@@ -100,3 +100,20 @@
   background-color: #F48C06;
   color: white;
 }
+
+@media (max-width: 992px) {
+  .int-container {
+   
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .integration-icons, .inte-text {
+    width: 100%;
+  }
+
+  .inte-text {
+      align-items: center; 
+      text-align: center;
+  }
+}

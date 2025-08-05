@@ -1,8 +1,11 @@
 import polyLogo from '../../assets/polyLogo.svg';
 import React from 'react';
 import './Header.css';
+import { useState } from 'react';
 
 function Navbar() {
+    const [isMenuOpen, setIsMenuOpen] = useState(false)
+
 return (<nav className="navbar">
         <div className="navbar-logo">
           <a href="/">
@@ -11,7 +14,7 @@ return (<nav className="navbar">
           </a>
         </div>
 
-        <div className="navbar-right">
+        <div className={`navbar-right ${isMenuOpen ? 'open' : ''}`}>
           <ul className="navbar-links">
             <li><a href="#">Home</a></li>
             <li><a href="#">Careers</a></li>
@@ -23,6 +26,10 @@ return (<nav className="navbar">
             <button className="signup-btn">Sign Up</button>
           </div>
         </div>
+
+        <button className="hamburger-menu" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+        ...
+      </button>
       </nav>
 
 

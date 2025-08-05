@@ -155,3 +155,16 @@
   justify-content: space-between;
   align-items: center;
 }
+
+@media (max-width: 992px) {
+  .test-container {
+    
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+
+  .test-txt, .test-img {
+    width: 100%; 
+    text-align: center;
+  }
+}
