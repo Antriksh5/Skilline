@@ -4,9 +4,9 @@ import facebookLogo from '../../assets/facebook.svg';
 import googleLogo from '../../assets/google.svg';
 import netflixLogo from '../../assets/netflix.svg';       
 import grabLogo from '../../assets/grab.svg';
-import './company.css';
+import './Company.css';
 import useIntersectionObserver from "../../hook/useIntersectionObserver";
-function ComapanySection(){
+function CompanySection(){
     const [ref, isVisible] = useIntersectionObserver({ threshold: 0.1 });
     const companies = [
         {name: 'Google', logo: googleLogo},
@@ -35,4 +35,4 @@ function ComapanySection(){
         </section>
     );
 }
-export default ComapanySection;
+export default CompanySection;
