@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Header from './components/header/Header.jsx';
-import CompanySection from './components/CompanySection-temp/Company.jsx';
+import CompanySection from './components/CompanySection/Company.jsx';
 import AllInOne from './components/AllInOne/AllInOne.jsx';
 import WhatIsSkilline from './components/WhatIsSkilline/Wis.jsx';
 import Classroom from './components/Classroom/Classroom.jsx';
